@@ -1,0 +1,24 @@
+{
+    "decimal": "",
+    "emptyTable": "គ្មានទិន្នន័យក្នុងតារាង",
+    "info": "បង្ហាញ _START_ ទៅ _END_ នៃធាតុ _TOTAL_",
+    "infoEmpty": "បង្ហាញ 0 ទៅ 0 នៃ 0 ធាតុ",
+    "infoFiltered": "(ត្រង _MAX_ ធាតុសរុប)",
+    "infoPostFix": "",
+    "thousands": ",",
+    "lengthMenu": "បង្ហាញ _MENU_ ធាតុ",
+    "loadingRecords": "កំពុងផ្ទុក...",
+    "processing": "កំពុងដំណើរការ...",
+    "search": "ស្វែងរក:",
+    "zeroRecords": "គ្មានធាតុដែលផ្គូផ្គង",
+    "paginate": {
+        "first": "ដំបូង",
+        "last": "ចុងក្រោយ",
+        "next": "បន្ទាប់",
+        "previous": "មុន"
+    },
+    "aria": {
+        "sortAscending": ": ដាក់ជួរលើឡើង",
+        "sortDescending": ": ដាក់ជួរលើចុះ"
+    }
+}

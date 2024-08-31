@@ -139,4 +139,11 @@ class UserController extends Controller
 
         return response()->json(['success' => true]);
     }
+
+
+
+    public function profile(User $user) {
+        // dd($user);
+        return view('admin.users.profile', compact('user'));
+    }
 }

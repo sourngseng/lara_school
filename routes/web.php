@@ -25,6 +25,8 @@ Route::get('/translations/{locale}', function ($locale) {
     ]);
 });
 
+Route::get('/homepage',[App\Http\Controllers\FrontendController::class, 'index'])->name('page.home');
+
 
 
 
@@ -44,6 +46,7 @@ Route::get('/login/telegram/callback', [TelegramController::class, 'handleTelegr
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('/user/profile/{user}/edit', [UserController::class, 'profile'])->name('user.profile');
 
 
 Route::prefix('admin')->group(function () {

@@ -189,7 +189,15 @@
                     // If it's a dropdown item, also activate its parent dropdown menu
                     if (link.closest(".dropdown-menu")) {
                         let parentDropdown = link.closest(".dropdown").querySelector(".nav-link");
-                        parentDropdown.classList.add(".active");
+                        parentDropdown.classList.add("active");
+                    }
+
+                       // If no dropdown item is active, remove the 'active' class from the dropdown toggle link
+                    if (!isDropdownLinkActive) {
+                        let dropdownToggle = document.querySelector(".dropdown-toggle");
+                        if (dropdownToggle) {
+                            dropdownToggle.classList.remove("active");
+                        }
                     }
                 }
             });

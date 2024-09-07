@@ -12,8 +12,6 @@
         <header>
             @include('frontpage.partials.navbar')
         </header>
-        <h1>Front Page ប្រើប្រាស់រួម</h1>
-
             <button @click="changeLanguage('en')">English</button>
             <button @click="changeLanguage('kh')">ភាសាខ្មែរ</button>
 

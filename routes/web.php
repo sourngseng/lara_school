@@ -1,9 +1,10 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\PostController;
+use App\Http\Controllers\TelegramController;
 use App\Http\Controllers\Admin\UserController;
 use App\Http\Controllers\Auth\AdminAuthController;
-use App\Http\Controllers\TelegramController;
 
 /*
 |--------------------------------------------------------------------------
@@ -25,19 +26,21 @@ Route::get('/translations/{locale}', function ($locale) {
     ]);
 });
 
-Route::get('/homepage',[App\Http\Controllers\FrontendController::class, 'index'])->name('page.home');
+Route::get('/',[App\Http\Controllers\FrontendController::class, 'index'])->name('page.home');
+
+Route::resource('posts', PostController::class);
 
 
 
+// Route::get('/', function () {
+//     // return view('welcome');
+//     // return view('frontpage.index');
+//     return view('preschool.index');
+// });
 
-Route::get('/', function () {
-    // return view('welcome');
-    return view('frontpage.index');
-});
-Route::get('/blog', function () {
-    // return view('welcome');
-    return view('frontpage.blog');
-});
+Route::get('/about',[App\Http\Controllers\FrontendController::class, 'about'])->name('page.about');
+Route::get('/classes',[App\Http\Controllers\FrontendController::class, 'classes'])->name('page.classes');
+Route::get('/blog',[App\Http\Controllers\FrontendController::class, 'blog'])->name('page.blog');
 
 // Telegram Login
 Route::get('/login/telegram', [TelegramController::class, 'redirectToTelegram'])->name('telegram.login');

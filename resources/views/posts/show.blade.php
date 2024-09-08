@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.auth_admin')
 
 @section('content')
     <h1>{{ $post->title }}</h1>

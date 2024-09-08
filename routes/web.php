@@ -28,7 +28,7 @@ Route::get('/translations/{locale}', function ($locale) {
 
 Route::get('/',[App\Http\Controllers\FrontendController::class, 'index'])->name('page.home');
 
-Route::resource('posts', PostController::class);
+
 
 
 
@@ -68,6 +68,8 @@ Route::prefix('admin')->group(function () {
         //delete
         // Route::get('/users/delete/{id}',[UserController::class, 'destroy'])->name('admin.users.destroy');
         Route::delete('admin/users/{user}', [UserController::class, 'destroy'])->name('admin.users.destroy');
+
+        Route::resource('posts', PostController::class);
 
         Route::get('/list-test', function () {
             // return view('welcome');

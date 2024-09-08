@@ -9,6 +9,14 @@
             </a>
           </li>
           <li class="nav-item">
+            <a href="{{route('posts.index')}}" class="nav-link">
+              <i class="nav-icon fas fa-blog"></i>
+              <p>
+                គ្រប់គ្រងព័ត៌មាន
+              </p>
+            </a>
+          </li>
+          <li class="nav-item">
             <a href="#" class="nav-link">
               <i class="nav-icon fas fa-users"></i>
               <p>

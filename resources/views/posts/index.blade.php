@@ -1,9 +1,10 @@
-@extends('layouts.front_layout')
+{{-- @extends('layouts.front_layout') --}}
+
+@extends('layouts.auth_admin')
 
 @section('content')
     <h2>នេះគឺជាទំព័រ Blog</h2>
     <a href="{{ route('posts.create') }}">Create Post</a>
-    <a href="{{ route('page.home') }}"><h3>នេះគឺជាទំព័រ Blog</h3></a>
     <table>
         <tr>
             <th>Title</th>
